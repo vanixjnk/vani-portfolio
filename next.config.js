@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    output: 'export', // Cấu hình xuất tĩnh
+    images: {
+        unoptimized: true, // Vô hiệu hóa tối ưu hóa hình ảnh khi xuất tĩnh
+    },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
